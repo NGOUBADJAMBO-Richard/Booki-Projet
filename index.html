@@ -31,13 +31,13 @@
         <nav>
           <!-- Section logo -->
           <div class="logo">
-            <img src="./images/logo/Booki.png" alt="logo" />
+            <img src="./images/logo/Booki.png" alt="Logo Booki" />
           </div>
 
           <!-- Section menu -->
           <ul>
-            <li><a href="">Hebergements</a></li>
-            <li><a href="">Activités</a></li>
+            <li><a href="" class="active">Hebergements</a></li>
+            <li><a href="" class="active">Activités</a></li>
           </ul>
         </nav>
       </header>
@@ -50,17 +50,17 @@
             <h2>Trouvez votre hebergement pour des vacance de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
+
           <!-- Barre de recherche -->
           <div class="search-bar">
-            <button type="submit" class="local" name="localisation">
-              <i class="fa-solid fa-location-dot"></i>
-            </button>
-            <input
-              type="search"
-              class="site-search"
-              name="q"
-              placeholder="Marseille, France"
-            />
+            <div class="icon">
+              <button type="submit" class="local" name="localisation">
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </div>
+
+            <input type="text" placeholder="Marseille, France" />
+
             <button type="submit" class="search" name="search">
               Rechercher
             </button>
@@ -69,40 +69,43 @@
           <!-- Barre de Filtre -->
           <div class="filtre-bar">
             <h2>Filtres</h2>
-            <button type="submit" class="b">
+
+            <button type="submit" class="Eco">
               <i class="fa-solid fa-money-bill-1-wave"></i>Economique
             </button>
-            <button type="submit" class="b">
+            <button type="submit" class="Fam">
               <i class="fa-solid fa-person"></i>Familial
             </button>
-            <button type="submit" class="b">
+            <button type="submit" class="Rom">
               <i class="fa-solid fa-heart"></i>Romantique
             </button>
-            <button type="submit" class="b">
+            <button type="submit" class="Pep">
               <i class="fa-solid fa-fire"></i>Nos Pepites
             </button>
           </div>
-        </div>
 
-        <!-- Barre d'info -->
-        <div class="info-bar">
-          <i class="fa-solid fa-circle-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <!-- Barre d'info -->
+          <div class="info-bar">
+            <div class="cercle"><i class="fa-solid fa-info"></i></div>
+            <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
         </div>
 
         <!-- On attaque la section -->
         <div class="hebergements-and-populaires">
           <section class="hebergements">
             <h2 class="section-title">Hebergements à Marseille</h2>
-            div
-            <div class="">
+
+            <div class="frame_1">
+              <!-- Frame 1 -->
               <a href="#">
-                <article class="card">
+                <article class="card-main">
                   <img
                     src="./images/hebergements/emile-guillemot.jpg"
                     alt="Image de la chambre d'hôtel montrant un lit"
                   />
-                  <div class="card-content">
+                  <div class="card-main-content">
                     <div class="card-txt">
                       <h3 class="card-title">Hôtel Le soleil du matin</h3>
                       <p class="card-subtitle">
@@ -123,19 +126,19 @@
                   </div>
                 </article>
               </a>
+
+              <!-- Frame 2 -->
               <a href="#">
-                <article class="card">
+                <article class="card-main">
                   <img
-                    src="./images/hebergements/aw-creative.jpg"
+                    src="./images/hebergements/emile-guillemot.jpg"
                     alt="Image de la chambre d'hôtel montrant un lit"
                   />
-                  <div class="card-content">
+                  <div class="card-main-content">
                     <div class="card-txt">
-                      <h3 class="card-title">
-                        Chambres d’hôtes Au cœur de l’eau
-                      </h3>
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
                       <p class="card-subtitle">
-                        Nuit à partir de 71<span class="euro">€</span>
+                        Nuit à partir de 128<span class="euro">€</span>
                       </p>
                     </div>
                     <div class="card-rating">
@@ -152,17 +155,108 @@
                   </div>
                 </article>
               </a>
+
+              <!-- Frame 3 -->
               <a href="#">
-                <article class="card">
+                <article class="card-main">
                   <img
-                    src="./images/hebergements/febrian-zakaria2.jpg"
+                    src="./images/hebergements/emile-guillemot.jpg"
                     alt="Image de la chambre d'hôtel montrant un lit"
                   />
-                  <div class="card-content">
+                  <div class="card-main-content">
                     <div class="card-txt">
-                      <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
                       <p class="card-subtitle">
-                        Nuit à partir de 68<span class="euro">€</span>
+                        Nuit à partir de 128<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <div class="frame_1">
+              <!-- Frame 1 -->
+              <a href="#">
+                <article class="card-main">
+                  <img
+                    src="./images/hebergements/emile-guillemot.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-main-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 128<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+
+              <!-- Frame 2 -->
+              <a href="#">
+                <article class="card-main">
+                  <img
+                    src="./images/hebergements/emile-guillemot.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-main-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 128<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+
+              <!-- Frame 3 -->
+              <a href="#">
+                <article class="card-main">
+                  <img
+                    src="./images/hebergements/emile-guillemot.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-main-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 128<span class="euro">€</span>
                       </p>
                     </div>
                     <div class="card-rating">
@@ -187,6 +281,7 @@
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
+
             <div class="populaires-cards">
               <a href="#">
                 <article class="card">

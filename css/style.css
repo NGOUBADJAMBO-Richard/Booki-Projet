@@ -25,66 +25,71 @@ nav {
 
 .logo {
   display: flex;
-  padding: 30px 0 0 30px;
+  padding: 30px 50px 30px 50px;
   gap: 10px;
 }
 
 .logo img {
   width: 61.09px;
   height: 19px;
-  margin: 0%;
 }
 
 header nav ul {
   list-style: none;
+  gap: 68px;
   display: flex;
   width: 344px;
   height: 35px;
   left: 1096px;
-  padding: 30px 50px;
-  gap: 68px;
+  padding: 30px 0 0 50px;
 }
 
 header nav ul a:hover {
   color: var(--main-color);
+  border-top: 2px solid #0065fc;
+  padding-top: 15px;
 }
 
 .info-group {
-  padding: 1%;
+  width: 1, 340px;
+  height: 281px;
+  gap: 35px;
+  /* padding: 1%; */
 }
 
 .headline {
   gap: 8%;
   min-width: 1px;
-  line-height: 40px;
+  line-height: 30px;
   padding-bottom: 2%;
 }
 
 .search-bar {
-  border-radius: 2%;
-  padding-bottom: 2%;
-  gap: 24%;
+  display: flex;
+  width: 377px;
+  height: 49px;
+  /* gap: 24px; */
+  border-radius: 15px;
 }
 
 .search-bar i {
   color: black;
 }
-
 .search-bar .local {
   width: 50px;
   height: 49px;
+  border-radius: 15px 0px 0px 15px;
   border: 1px;
-  border-radius: 20px 0px 0px 20px;
 }
+
 .search-bar .local:hover {
   cursor: pointer;
 }
 
-.search-bar .site-search {
-  height: 49px;
-  border: 1px;
+.search-bar input {
+  width: 200px;
+  height: 47px;
   border: solid 1px;
-  font-weight: bold;
 }
 
 .search-bar .search {
@@ -104,37 +109,110 @@ header nav ul a:hover {
   cursor: pointer;
 }
 
-.filtre-bar {
-  display: flex;
-  gap: 3%;
-  margin: 0;
-  padding: 1%;
-  align-items: center;
-  font-weight: bold;
+::placeholder {
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
 }
 
-.filtre-bar button {
-  font-weight: bold;
+.filtre-bar {
   display: flex;
-  gap: 10px;
+  width: 758px;
+  height: 50px;
+  gap: 15px;
+  align-items: center;
+  padding: 20px;
+}
+
+.filtre-bar h2 {
+  width: 54px;
+  height: 21px;
+  padding-right: 20px;
+}
+
+.filtre-bar .Eco {
+  width: 173px;
+  height: 50px;
+  padding: 4px 19px 4px 19px;
+  border-radius: 25px;
   border: 2px;
-  padding: 15px;
+  gap: 10px;
   background-color: white;
-  border: solid var(--main-bg-color) 4px;
-  border-radius: 25px 25px 25px 25px;
+  border: 2px solid rgba(217, 217, 217, 1);
+}
+
+.filtre-bar .Fam {
+  width: 134px;
+  height: 50px;
+  padding: 4px 19px 4px 19px;
+  border-radius: 25px;
+  border: 2px;
+  gap: 10px;
+  background-color: white;
+  border: 2px solid rgba(217, 217, 217, 1);
+}
+
+.filtre-bar .Rom {
+  width: 170px;
+  height: 50px;
+  padding: 4px 19px 4px 19px;
+  border-radius: 25px;
+  border: 2px;
+  gap: 10px;
+  background-color: white;
+  border: 2px solid rgba(217, 217, 217, 1);
+}
+
+.filtre-bar .Pep {
+  width: 167px;
+  height: 50px;
+  padding: 4px 19px 4px 19px;
+  border-radius: 25px;
+  border: 2px;
+  gap: 10px;
+  background-color: white;
+  border: 2px solid rgba(217, 217, 217, 1);
 }
 
 .info-bar {
+  align-items: center;
   display: flex;
   padding: 30px;
   gap: 15px;
 }
 
+.info-bar .cercle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
+  background: white;
+  border: 2px solid rgba(217, 217, 217, 1);
+}
+
+.info-bar i {
+  /* width: 4px;
+  height: 10px;
+  color: rgba(0, 101, 252, 1);
+  justify-items: center;
+  align-items: center; */
+  top: 7px;
+  left: 10px;
+  size: 5px;
+}
+
 .filtre-bar button:hover {
-  background-color: cornflowerblue;
+  background-color: var(--filter-bg-color);
   cursor: pointer;
 }
+
 body {
+  /* width: 1, 440px;
+  height: 1, 722.02px;
+  padding: 0px 50px 0px 50px;
+  gap: 35px; */
   display: -moz-groupbox;
   justify-content: center;
 }
@@ -183,6 +261,7 @@ a {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hebergements-and-populaires section {
@@ -190,6 +269,44 @@ a {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+  gap: 15px;
+}
+
+.section-title {
+  width: 811px;
+  height: 26px;
+}
+
+.frame_1 {
+  padding-top: 35px;
+  display: flex;
+  width: 811px;
+  height: 207.25px;
+  gap: 30px;
+}
+
+.card-main {
+  width: 200px;
+  height: 207.25px;
+  padding: 0px 0px 15px 0px;
+  border-radius: 20px;
+  gap: 4px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-main img {
+  width: 200px;
+  height: 124px;
+  border-radius: 20px 20px 0px 0px;
+  border: 1px;
+}
+
+.card-main-content {
+  width: 200px;
+  height: 64.25px;
+  padding: 0px 15px 0px 15px;
+  gap: 8px;
 }
 
 /****** Hebergements ***********/
