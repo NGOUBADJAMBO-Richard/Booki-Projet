@@ -475,3 +475,53 @@ footer div {
 @media (max-width: 767.98px) {
   /* ... */
 }
+
+/* Styles de base */
+/* ... */
+
+/* Media queries pour les écrans de petite taille */
+@media only screen and (max-width: 600px) {
+  /* Réorganiser la disposition pour les petits écrans */
+  /* Par exemple, rendre la navigation verticale */
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+  }
+
+  .info-group {
+    padding: 20px;
+  }
+
+  /* Ajuster la taille des images des hébergements */
+  .card-main img {
+    width: 100%;
+  }
+
+  /* Ajouter des styles spécifiques pour les petites tailles */
+  /* ... */
+}
+
+/* Media queries pour les écrans de taille moyenne */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Ajouter des styles pour les écrans de taille moyenne */
+  /* Par exemple, réduire la taille de la police */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-group {
+    padding: 30px;
+  }
+
+  /* Ajuster la taille des images des hébergements */
+  .card-main img {
+    width: 80%;
+  }
+
+  /* Ajouter des styles spécifiques pour les tailles moyennes */
+  /* ... */
+}
